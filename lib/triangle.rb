@@ -7,7 +7,7 @@ class Triangle
 
     if side_1 <= 0 || side_2 <= 0 || side_3 <= 0
       raise TriangleError
-    end 
+    end
 
     if side_1 == nil || side_2 == nil || side_3 == nil
       raise TriangleError
@@ -15,7 +15,7 @@ class Triangle
 
     if side_1 >= (side_2 + side_3) || side_2 >= (side_1 + side_3) || side_3 >= (side_1 + side_2)
       raise TriangleError
-    end 
+    end
     
   end
 
