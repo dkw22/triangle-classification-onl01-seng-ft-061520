@@ -5,9 +5,9 @@ class Triangle
     @side_2 = side_2
     @side_3 = side_3
 
-    if side_1 == nil || side_2 == nil || side_3 == nil 
+    if side_1 == nil || side_2 == nil || side_3 == nil
       raise TriangleError
-    end 
+    end
   end
 
   def kind
