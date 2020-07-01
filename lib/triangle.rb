@@ -4,6 +4,10 @@ class Triangle
     @side_1 = side_1
     @side_2 = side_2
     @side_3 = side_3
+
+    if side_1 == nil || side_2 == nil || side_3 == nil 
+      raise TriangleError
+    end 
   end
 
   def kind
@@ -15,5 +19,8 @@ class Triangle
       return :scalene
     end
   end
+
+  class TriangleError < StandardError
+  end 
 
 end
